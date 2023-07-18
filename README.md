@@ -34,7 +34,7 @@ Here is a small conclusion that I've found based on my findings:
 
 ## Dataset
 
-This dataset contains X rows and Y columns for the variables listed below. The following contains stats in Pokemon: A Pokemon has a unique set of stats that contribute to the Pokemon's identity. 
+This dataset contains 1442772 rows and 3 columns (originally) for the variables listed below. 
 
 Variable  |Description |
 -----|-----|
