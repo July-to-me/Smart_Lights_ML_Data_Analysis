@@ -1,27 +1,20 @@
 # Smart_Lights_ML_Data_Analysis
-This project is from one of previous courses during College. It focuses on the Smart Lights Dataset from Kaggle. This was my first attempt in looking into a dataset that contains over 10,000 datapoints.  
-
-Data can be found here: https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
-
-
-
-# Pokemon_Data_Analysis
-I created this project to showcase what I can do with data. This is something that I am passionate about to the point where I want to do more in the future. I believe that I worked on it for 2 months, but I can clearly see myself working on it for more!
+This project is from one of my previous courses during College. It focuses on the Smart Lights Dataset from Kaggle. This was my first attempt at looking into a dataset that contains over 10,000 data points.  
 
 ## Objective
 
-In this project, I wanted to see if I can predict if a one can predict a Legendary Pokemon based on its stats, and if there's a specialization in each Pokemon type. :
+In this project, I wanted to see if one can predict a home's affluence based on its energy usage along with other variables. 
 1. Getting the data via Kaggle, and loading it in Google Colab (so I can access it on multiple devices).
-3. Creating various data frames in order to group them based on types and legendary in order to do Exploratory Data Analysis.
-4. I then used statistical techniques such as ANOVA, K-Means clustering, and others to answer my questions about legendary prediction and specialization.
-5. I later used different machine-learning techniques to predict a Pokemon's legendary status and ask other questions that interested me.
+2. Converted the string of time in an actual time thanks to datetime. 
+3. Randomly sampling data in order to conduct partial Exploratory Data Analysis.
+4. I created various graphs thanks to Seaborn and Matplotlib in order to see the difference between each home's usages.
+5. I then used statistical techniques such as K-Means clustering, random forest, and logistic regression to answer my questions about predicting a home's affluence.
 
 ## Dataset
 
-I've used a dataset that I've found in Kaggle. I was unable to extract the JSON file from the Pokemon.apk website, nor do datamining from a wiki page or another website containing all Pokemon. 
-
+I've used a dataset that I've found in Kaggle. 
 More info about the dataset can be found here:
-- Website: https://www.kaggle.com/datasets/abcsds/pokemon?datasetId=121&sortBy=dateCreated
+- Website: https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
 
 ## Discovery
 
@@ -45,13 +38,13 @@ This dataset contains X rows and Y columns for the variables listed below. The f
 
 Variable  |Description |
 -----|-----|
-Total|The accumulation of all the stats below|
-HP|Also known as "Hit Points": The Health of the Pokemon |
-Attack|The physical attack strength of the Pokemon |
-Special Attack|The non-physical attack moves from the Pokemon |
-Defense|How much can a Pokemon withstand physical attacks
-SpecialDefense|How much can a Pokemon withstand non-physical attacks
-Speed|This dictates which Pokemon can attack first
-Generation|Where the Pokemon is from. Generation and Region will be used interchangeably.
-Type 1 and Type 2 |This is the attribute of the Pokemon. There are 18 types in the world of Pokemon. A Pokemon can have just one typing or two. 
+LCLid| The corresponding household id |
+Energy(kWh/hh)|The amount of energy used on half-hourly |
+Month| The current month of the energy being used |
+Day_of_month |The day of the month that the data was being recorded |
+Time| The time is used in order to keep track of the energy used half-hourly
+Weekday | The day of the week that the day was on 
+Acorn_grouped| What type of affluent classification the household is considered
+File|Which file we can find the household in
+StdorToU |The tariff being applied on that household
 Legendary|This is a True/False statement that says if a Pokemon is a legendary Pokemon or not. 
